@@ -8,13 +8,10 @@ body, html {
 	top: 0;
 	width: 100%;
 	margin: 0px;
-	background-color: #000000;
+	background-color: rgb(75,75,75,.9);
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding = 20px;
 	visibility: hidden;
-
-
 }
 
 .basketbar{
@@ -23,7 +20,7 @@ body, html {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
-	background-color: #000000;
+	background-color: dimgray;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -53,7 +50,7 @@ body, html {
 }
 
 .logobox{
-	height: 48px;
+	height: 44px;
   	width: 80px;
   	background-color: #d00040;
   	display:inline-block;
@@ -65,7 +62,7 @@ body, html {
 }
 
 .logo{
-	//text-align: sub;
+	/*text-align: sub;*/
 	color: white;
 	font-size: 30px;
 
@@ -104,3 +101,61 @@ body, html {
 p{
 	padding-left: 10px;
 }
+
+/*Search Bar*/
+
+ .search-container {
+	float: right;
+  }
+
+  .navbar input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+  }
+
+  .navbar .search-container button {
+  	color:white;
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background:#d00040;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+  }
+
+  .navbar .search-container button:hover {
+	background: #d00040;
+	
+	filter:saturate(50%) brightness(200%);
+  }
+
+  @media screen and (max-width: 600px) {
+	.navbar .search-container {
+	  float: none;
+	}
+	.navbar a, .navbar input[type=text], .navbar .search-container button {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	  width: 100%;
+	  margin: 0;
+	  padding: 14px;
+	}
+
+	 /* map*/
+	   .map {
+        height: 100%;
+      }
+     
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+	  }
+	  
+	   /* endMap */
+	}
